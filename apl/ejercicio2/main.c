@@ -1,3 +1,11 @@
+/*############# INTEGRANTES ###############
+###     Justiniano, MÃ¡ximo              ###
+###     Mallia, Leandro                 ###
+###     Maudet, Alejandro               ###
+###     Naspleda, JuliÃ¡n                ###
+###     Rodriguez, Pablo                ###
+#########################################*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -35,23 +43,24 @@ void limpiar_directorio(const char *path) {
         if (strcmp(entry->d_name, ".") == 0 || strcmp(entry->d_name, "..") == 0)
             continue;
 
-        snprintf(filepath, sizeof(filepath), "%s/%s", path, entry->d_name);
-
-        struct stat st;
-        if (stat(filepath, &st) == 0 && S_ISREG(st.st_mode)) {
+        size_t len = strlen(entry->d_name);
+        if (len > 4 && strcmp(entry->d_name + len - 4, ".paq") == 0) {
+            snprintf(filepath, MAX_PATH - 1, "%s/%s", path, entry->d_name);
+            filepath[MAX_PATH - 1] = '\0';
             remove(filepath);
         }
     }
     closedir(dir);
 
     char procesados[MAX_PATH];
-    snprintf(procesados, sizeof(procesados), "%s/procesados", path);
-    mkdir(procesados, 0777);  // Asegurate que estás incluyendo <sys/stat.h>
+    snprintf(procesados, MAX_PATH - 1, "%s/procesados", path);
+    procesados[MAX_PATH - 1] = '\0';
+    mkdir(procesados, 0777);
 }
 
 void manejar_senal(int sig) {
     liberar_buffer();
-    printf("\nProceso terminado con señal %d. Recursos liberados.\n", sig);
+    printf("\nProceso terminado con seï¿½al %d. Recursos liberados.\n", sig);
     exit(EXIT_SUCCESS);
 }
 

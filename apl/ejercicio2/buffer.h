@@ -1,3 +1,11 @@
+/*############# INTEGRANTES ###############
+###     Justiniano, Máximo              ###
+###     Mallia, Leandro                 ###
+###     Maudet, Alejandro               ###
+###     Naspleda, Julián                ###
+###     Rodriguez, Pablo                ###
+#########################################*/
+
 #ifndef BUFFER_H_INCLUDED
 #define BUFFER_H_INCLUDED
 
