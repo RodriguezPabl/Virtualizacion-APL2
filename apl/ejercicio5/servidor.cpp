@@ -126,11 +126,11 @@ void atenderCliente(int socketCliente) {
         if (!acierto) intentosRestantes--;
 
         if (estado == frase) {
-            string msg = "\n\033[1;32mGanaste!\033[0m La frase era: " + frase + "\n";
+            string msg = "\n\033[1;32mGanaste!\033[0m La frase era: " + frase + "\n##FIN##";
             send(socketCliente, msg.c_str(), msg.size(), 0);
             juegoTerminado = true;
         } else if (intentosRestantes == 0) {
-            string msg = "\n\033[1;31mPerdiste.\033[0m La frase era: " + frase + "\n";
+            string msg = "\n\033[1;31mPerdiste.\033[0m La frase era: " + frase + "\n##FIN##";
             send(socketCliente, msg.c_str(), msg.size(), 0);
             juegoTerminado = true;
         } else {

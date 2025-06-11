@@ -107,9 +107,10 @@ int main(int argc, char* argv[]) {
         }
         cout << buffer;
 
-        if (strstr(buffer, "Adivinaste") || strstr(buffer, "Perdiste")) {
-            break;
+        if (strstr(buffer, "##FIN##")) {
+        break;
         }
+
     }
 
     close(socketCliente);
