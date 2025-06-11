@@ -1,3 +1,11 @@
+/*############# INTEGRANTES ###############
+###     Justiniano, Máximo              ###
+###     Mallia, Leandro                 ###
+###     Maudet, Alejandro               ###
+###     Naspleda, Julián                ###
+###     Rodriguez, Pablo                ###
+#########################################*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

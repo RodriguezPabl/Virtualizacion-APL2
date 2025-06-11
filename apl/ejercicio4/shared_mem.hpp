@@ -1,6 +1,14 @@
 #pragma once
 #include <semaphore.h>
 
+/*############# INTEGRANTES ###############
+###     Justiniano, Máximo              ###
+###     Mallia, Leandro                 ###
+###     Maudet, Alejandro               ###
+###     Naspleda, Julián                ###
+###     Rodriguez, Pablo                ###
+#########################################*/
+
 #define SHM_NAME "/ahorcado_shm"
 #define SEM_SERVER_READY "/sem_server_ready"
 #define SEM_CLIENT_READY "/sem_client_ready"

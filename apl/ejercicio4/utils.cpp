@@ -4,6 +4,14 @@
 #include <chrono>
 #include <cctype>
 
+/*############# INTEGRANTES ###############
+###     Justiniano, Máximo              ###
+###     Mallia, Leandro                 ###
+###     Maudet, Alejandro               ###
+###     Naspleda, Julián                ###
+###     Rodriguez, Pablo                ###
+#########################################*/
+
 std::string ocultar_frase(const std::string& frase) {
     std::string oculta;
     for (char c : frase)

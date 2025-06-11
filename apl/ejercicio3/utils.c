@@ -1,3 +1,11 @@
+/*############# INTEGRANTES ###############
+###     Justiniano, Máximo              ###
+###     Mallia, Leandro                 ###
+###     Maudet, Alejandro               ###
+###     Naspleda, Julián                ###
+###     Rodriguez, Pablo                ###
+#########################################*/
+
 #include "utils.h"
 #include <sys/stat.h>
 #include <unistd.h>

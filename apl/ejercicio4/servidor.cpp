@@ -14,6 +14,14 @@
 #include "shared_mem.hpp"
 #include "utils.hpp"
 
+/*############# INTEGRANTES ###############
+###     Justiniano, Máximo              ###
+###     Mallia, Leandro                 ###
+###     Maudet, Alejandro               ###
+###     Naspleda, Julián                ###
+###     Rodriguez, Pablo                ###
+#########################################*/
+
 using namespace std;
 
 volatile sig_atomic_t terminar_suave = 0;

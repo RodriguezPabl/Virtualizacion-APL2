@@ -10,6 +10,14 @@
 #include <cctype>
 #include "shared_mem.hpp"
 
+/*############# INTEGRANTES ###############
+###     Justiniano, Máximo              ###
+###     Mallia, Leandro                 ###
+###     Maudet, Alejandro               ###
+###     Naspleda, Julián                ###
+###     Rodriguez, Pablo                ###
+#########################################*/
+
 using namespace std;
 
 void imprimir_ayuda() {
