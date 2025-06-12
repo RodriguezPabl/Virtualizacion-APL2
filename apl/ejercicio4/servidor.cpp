@@ -202,7 +202,6 @@ int main(int argc, char* argv[]) {
         // Si se recibió SIGUSR2 (final forzoso) y la partida seguía activa
         if (terminar_fuerza && juego->gano == -1) {
             juego->gano = 0;  // Se considera derrota
-            juego->tiempo_fin = timestamp_ms();
             sem_post(sem_client); // Despertar cliente si estaba esperando
         }
 
